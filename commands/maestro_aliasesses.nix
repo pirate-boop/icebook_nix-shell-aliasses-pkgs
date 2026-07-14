@@ -2,7 +2,7 @@
 
 let
   # Импортируем программы (передаем им pkgs)
-  rebuild-wiz = import ./commands-nix/rebuild.nix { inherit pkgs; };
+  rebuild-wiz = import ./nix-commands/ { inherit pkgs; };
   git-wiz     = import ./git-pull.nix { inherit pkgs; };
   perms-wiz   = import ./restore-perms.nix { inherit pkgs; };
   kori-menu   = import ./kori-menu.nix { inherit pkgs; };
